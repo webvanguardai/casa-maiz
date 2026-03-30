@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Maíz — Authentic Mexican Taqueria in Dubai</title>
+  <meta name="description" content="Casa Maíz brings ancient-grain tortillas, wood-fired cooking and true Mexican soul to Dubai. Handmade masa, nixtamal-ground corn, and recipes passed down three generations. Dine in, delivery & catering.">
+  <meta name="keywords" content="mexican restaurant dubai, taqueria dubai, tacos dubai, authentic mexican food dubai, corn tortillas dubai, catering dubai, mexican catering dubai, nixtamal dubai">
+  <meta name="author" content="Casa Maíz">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://casa-maiz.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Casa Maíz — Authentic Mexican Taqueria in Dubai">
+  <meta property="og:description" content="Handmade tortillas. Ancient corn. Real fire. Dubai's most soulful Mexican kitchen.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200&q=80">
+  <meta property="og:url" content="https://casa-maiz.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_AE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Casa Maíz — Authentic Mexican Taqueria in Dubai">
+  <meta name="twitter:description" content="Handmade tortillas. Ancient corn. Real fire.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200&q=80">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Casa Maíz",
+    "description": "Authentic Mexican taqueria in Dubai. Handmade tortillas, nixtamal corn, wood-fired cooking.",
+    "url": "https://casa-maiz.vercel.app",
+    "telephone": "+971585324519",
+    "email": "hola@casamaiz.ae",
+    "servesCuisine": "Mexican",
+    "priceRange": "$$",
+    "openingHours": ["Tu-Su 13:00-23:00"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    }
+  }
+  </script>
+
+  <!-- GA4 — replace G-XXXXXXXXXX with real tracking ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===========================
+       CSS VARIABLES
+    =========================== */
+    :root {
+      --terra: #C4622D;
+      --terra-dark: #A04E22;
+      --terra-light: #D9845A;
+      --cream: #F5ECD7;
+      --cream-dark: #EDD9B5;
+      --noir: #0D0A07;
+      --noir-light: #1C1612;
+      --noir-mid: #2E2720;
+      --warm-gold: #D4A762;
+      --text-muted: #8A7560;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    /* ===========================
+       RESET & BASE
+    =========================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--noir);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ===========================
+       NAVIGATION
+    =========================== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.25rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s ease, padding 0.4s ease;
+    }
+
+    nav.scrolled {
+      background: rgba(13, 10, 7, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 0.9rem 2.5rem;
+      border-bottom: 1px solid rgba(196, 98, 45, 0.15);
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--cream);
+    }
+
+    .nav-logo span {
+      color: var(--terra);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(245, 236, 215, 0.7);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--terra-light); }
+
+    .nav-cta {
+      background: var(--terra);
+      color: var(--cream) !important;
+      padding: 0.55rem 1.3rem !important;
+      border-radius: 2px;
+      transition: background 0.2s ease !important;
+    }
+
+    .nav-cta:hover { background: var(--terra-dark) !important; color: var(--cream) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--cream);
+      transition: all 0.3s ease;
+    }
+
+    /* ===========================
+       HERO
+    =========================== */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 680px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=1920&q=85');
+      background-size: cover;
+      background-position: center 40%;
+      transform: scale(1.04);
+      transition: transform 8s ease;
+    }
+
+    .hero-bg.loaded { transform: scale(1); }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(13, 10, 7, 0.97) 0%,
+        rgba(13, 10, 7, 0.65) 50%,
+        rgba(13, 10, 7, 0.2) 100%
+      );
+    }
+
+    .hero-grain {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 2.5rem 5rem;
+      max-width: 900px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terra-light);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.3s forwards;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--terra);
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 700;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--terra-light);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(245, 236, 215, 0.65);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.7s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease 0.9s forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--terra);
+      color: var(--cream);
+      padding: 0.85rem 2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: background 0.25s ease, transform 0.2s ease;
+      border-radius: 2px;
+    }
+
+    .btn-primary:hover { background: var(--terra-dark); transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--cream);
+      padding: 0.85rem 2rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px solid rgba(245, 236, 215, 0.25);
+      cursor: pointer;
+      transition: border-color 0.25s ease, color 0.25s ease;
+      border-radius: 2px;
+    }
+
+    .btn-ghost:hover { border-color: var(--terra-light); color: var(--terra-light); }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: 2.5rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 1s ease 1.2s forwards;
+    }
+
+    .hero-scroll span {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(245, 236, 215, 0.4);
+      writing-mode: vertical-rl;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, var(--terra), transparent);
+      animation: scrollPulse 2s ease infinite;
+    }
+
+    /* ===========================
+       SECTION COMMON
+    =========================== */
+    section { padding: 7rem 2.5rem; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 1.25rem;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--terra);
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--terra-light);
+    }
+
+    /* ===========================
+       STRIP — INFO BAR
+    =========================== */
+    .info-strip {
+      background: var(--terra);
+      padding: 1rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--cream);
+    }
+
+    .strip-icon { font-size: 1rem; }
+
+    /* ===========================
+       MENU SECTION
+    =========================== */
+    .menu-section {
+      background: var(--noir-light);
+    }
+
+    .menu-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .menu-tabs {
+      display: flex;
+      gap: 0;
+      border: 1px solid rgba(196, 98, 45, 0.25);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .menu-tab {
+      padding: 0.6rem 1.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: transparent;
+      color: rgba(245, 236, 215, 0.5);
+      border: none;
+      transition: all 0.25s ease;
+    }
+
+    .menu-tab.active {
+      background: var(--terra);
+      color: var(--cream);
+    }
+
+    .menu-tab:hover:not(.active) {
+      color: var(--cream);
+      background: rgba(196, 98, 45, 0.1);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu-panel { display: none; }
+    .menu-panel.active { display: contents; }
+
+    .menu-item {
+      background: var(--noir-mid);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease;
+      cursor: default;
+    }
+
+    .menu-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--terra);
+      transform: scaleY(0);
+      transition: transform 0.3s ease;
+      transform-origin: bottom;
+    }
+
+    .menu-item:hover { background: rgba(196, 98, 45, 0.07); }
+    .menu-item:hover::before { transform: scaleY(1); }
+
+    .menu-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.75rem;
+    }
+
+    .menu-item-name {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+    }
+
+    .menu-item-price {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--terra-light);
+      letter-spacing: 0.05em;
+    }
+
+    .menu-item-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .menu-item-tag {
+      display: inline-block;
+      margin-top: 0.85rem;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid rgba(196, 98, 45, 0.3);
+      color: var(--terra-light);
+      border-radius: 2px;
+    }
+
+    /* ===========================
+       HISTORIA SECTION
+    =========================== */
+    .historia-section {
+      background: var(--noir);
+      max-width: 100%;
+    }
+
+    .historia-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .historia-images {
+      position: relative;
+    }
+
+    .historia-img-main {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    .historia-img-accent {
+      position: absolute;
+      width: 55%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      bottom: -2.5rem;
+      right: -2.5rem;
+      border: 4px solid var(--noir);
+      border-radius: 2px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .historia-badge {
+      position: absolute;
+      top: 2rem;
+      left: -1.5rem;
+      background: var(--terra);
+      color: var(--cream);
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      border-radius: 2px;
+      box-shadow: 0 10px 40px rgba(196, 98, 45, 0.3);
+    }
+
+    .historia-badge-num {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1;
+      display: block;
+    }
+
+    .historia-badge-text {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .historia-text p {
+      font-size: 1rem;
+      color: rgba(245, 236, 215, 0.75);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .historia-text strong { color: var(--cream); font-weight: 500; }
+
+    .historia-values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .historia-value {
+      padding: 1.25rem;
+      border: 1px solid rgba(196, 98, 45, 0.15);
+      border-radius: 2px;
+    }
+
+    .historia-value-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .historia-value-title {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 0.3rem;
+    }
+
+    .historia-value-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ===========================
+       CATERING SECTION
+    =========================== */
+    .catering-section {
+      background: var(--cream);
+      color: var(--noir);
+    }
+
+    .catering-section .section-label { color: var(--terra-dark); }
+    .catering-section .section-label::before { background: var(--terra-dark); }
+    .catering-section .section-title { color: var(--noir); }
+    .catering-section .section-title em { color: var(--terra-dark); }
+
+    .catering-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .catering-header {
+      max-width: 680px;
+      margin-bottom: 4rem;
+    }
+
+    .catering-header p {
+      margin-top: 1.25rem;
+      font-size: 1rem;
+      color: rgba(13, 10, 7, 0.65);
+      line-height: 1.75;
+    }
+
+    .catering-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .catering-card {
+      background: var(--noir);
+      color: var(--cream);
+      padding: 2.5rem 2rem;
+      border-radius: 3px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .catering-card:hover { transform: translateY(-4px); }
+
+    .catering-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--terra);
+    }
+
+    .catering-card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .catering-card-title {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+      line-height: 1.1;
+    }
+
+    .catering-card-desc {
+      font-size: 0.85rem;
+      color: rgba(245, 236, 215, 0.6);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .catering-card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .catering-card-list li {
+      font-size: 0.82rem;
+      color: rgba(245, 236, 215, 0.8);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .catering-card-list li::before {
+      content: '—';
+      color: var(--terra-light);
+      font-size: 0.7rem;
+    }
+
+    .catering-cta {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .catering-cta p {
+      font-size: 0.85rem;
+      color: rgba(13, 10, 7, 0.55);
+    }
+
+    /* ===========================
+       GALLERY STRIP
+    =========================== */
+    .gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      height: 280px;
+      overflow: hidden;
+    }
+
+    .gallery-strip-item {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-strip-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      filter: saturate(0.85);
+    }
+
+    .gallery-strip-item:hover img {
+      transform: scale(1.06);
+      filter: saturate(1.1);
+    }
+
+    /* ===========================
+       RESERVAS
+    =========================== */
+    .reservas-section {
+      background: var(--noir-light);
+    }
+
+    .reservas-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .reservas-info {
+      position: sticky;
+      top: 6rem;
+    }
+
+    .reservas-info p {
+      margin: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+      color: rgba(245, 236, 215, 0.65);
+      line-height: 1.8;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      background: var(--noir-mid);
+      border-radius: 3px;
+      transition: background 0.2s ease;
+    }
+
+    .contact-item:hover { background: rgba(196, 98, 45, 0.1); }
+
+    .contact-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(196, 98, 45, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.15rem;
+    }
+
+    .contact-value {
+      font-size: 0.9rem;
+      color: var(--cream);
+      font-weight: 400;
+    }
+
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #25D366;
+      color: white;
+      padding: 0.9rem 1.75rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .wa-btn:hover { background: #1EB358; transform: translateY(-2px); }
+
+    .wa-btn svg { width: 20px; height: 20px; fill: white; }
+
+    /* Form */
+    .booking-form {
+      background: var(--noir-mid);
+      padding: 2.5rem;
+      border-radius: 4px;
+      border: 1px solid rgba(196, 98, 45, 0.1);
+    }
+
+    .form-title {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(245, 236, 215, 0.1);
+      color: var(--cream);
+      padding: 0.8rem 1rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      border-radius: 3px;
+      outline: none;
+      transition: border-color 0.2s ease;
+      width: 100%;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--terra);
+    }
+
+    .form-group select option { background: var(--noir-mid); }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background: var(--terra);
+      color: var(--cream);
+      border: none;
+      font-family: var(--sans);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background 0.2s ease;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover { background: var(--terra-dark); }
+
+    /* ===========================
+       MAP SECTION
+    =========================== */
+    .map-section {
+      padding: 0;
+    }
+
+    .map-wrapper {
+      position: relative;
+    }
+
+    .map-wrapper iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      filter: grayscale(40%) contrast(1.1);
+    }
+
+    .map-card {
+      position: absolute;
+      top: 2rem;
+      left: 2.5rem;
+      background: var(--noir);
+      padding: 1.5rem 1.75rem;
+      border-radius: 4px;
+      border: 1px solid rgba(196, 98, 45, 0.2);
+      max-width: 280px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .map-card-name {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.5rem;
+    }
+
+    .map-card-addr {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .map-card-hours {
+      font-size: 0.8rem;
+      color: var(--cream);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .open-dot {
+      width: 8px;
+      height: 8px;
+      background: #25D366;
+      border-radius: 50%;
+      animation: pulse 2s ease infinite;
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: #070503;
+      padding: 4rem 2.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(245, 236, 215, 0.06);
+      margin-bottom: 2rem;
+    }
+
+    .footer-brand-name {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand-name span { color: var(--terra); }
+
+    .footer-tagline {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .social-link {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(245, 236, 215, 0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: rgba(245, 236, 215, 0.5);
+      transition: all 0.2s ease;
+    }
+
+    .social-link:hover {
+      border-color: var(--terra);
+      color: var(--terra-light);
+      background: rgba(196, 98, 45, 0.1);
+    }
+
+    .footer-col-title {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--terra-light);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .footer-links a {
+      font-size: 0.85rem;
+      color: rgba(245, 236, 215, 0.5);
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover { color: var(--cream); }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-contact-item .icon {
+      color: var(--terra);
+      font-size: 0.9rem;
+      margin-top: 0.1rem;
+      flex-shrink: 0;
+    }
+
+    .footer-contact-item span {
+      font-size: 0.83rem;
+      color: rgba(245, 236, 215, 0.5);
+      line-height: 1.5;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(245, 236, 215, 0.3);
+    }
+
+    .footer-made {
+      font-size: 0.75rem;
+      color: rgba(245, 236, 215, 0.25);
+    }
+
+    /* ===========================
+       FLOATING WHATSAPP
+    =========================== */
+    .wa-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 24px rgba(37, 211, 102, 0.35);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      animation: floatIn 0.6s ease 1.5s both;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 8px 32px rgba(37, 211, 102, 0.45);
+    }
+
+    .wa-float svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+    .wa-pulse {
+      position: absolute;
+      inset: -6px;
+      border-radius: 50%;
+      border: 2px solid rgba(37, 211, 102, 0.4);
+      animation: waPulse 2s ease infinite;
+    }
+
+    /* ===========================
+       ANIMATIONS
+    =========================== */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes scrollPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: scale(0.5); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes waPulse {
+      0% { transform: scale(1); opacity: 0.6; }
+      70% { transform: scale(1.3); opacity: 0; }
+      100% { transform: scale(1.3); opacity: 0; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* Scroll-reveal utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 1024px) {
+      .historia-inner { grid-template-columns: 1fr; gap: 4rem; }
+      .historia-images { max-width: 560px; }
+      .catering-grid { grid-template-columns: 1fr 1fr; }
+      .reservas-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .reservas-info { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 5rem 1.5rem; }
+      nav { padding: 1.25rem 1.5rem; }
+      nav.scrolled { padding: 0.9rem 1.5rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { padding: 0 1.5rem 4rem; }
+      .catering-grid { grid-template-columns: 1fr; }
+      .gallery-strip { grid-template-columns: repeat(3, 1fr); height: 200px; }
+      .gallery-strip-item:nth-child(4),
+      .gallery-strip-item:nth-child(5) { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .info-strip { gap: 1.5rem; }
+      .map-card { left: 1rem; top: 1rem; max-width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Casa <span>Maíz</span></a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#historia">Our Story</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#reservas" class="nav-cta">Reserve</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ===========================
+       HERO
+  =========================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dubai's Mexican Kitchen</p>
+      <h1 class="hero-title">El maíz<br><em>no miente.</em></h1>
+      <p class="hero-sub">Handmade tortillas. Nixtamal-ground corn. Wood fire. Recipes carried across three generations — and two continents.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">See the Menu ↓</a>
+        <a href="#reservas" class="btn-ghost">Reserve a Table</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       INFO STRIP
+  =========================== -->
+  <div class="info-strip">
+    <div class="strip-item"><span class="strip-icon">📍</span> Al Quoz, Dubai</div>
+    <div class="strip-item"><span class="strip-icon">🕐</span> Tue – Sun · 1pm – 11pm</div>
+    <div class="strip-item"><span class="strip-icon">🌮</span> Dine-in · Delivery · Catering</div>
+    <div class="strip-item"><span class="strip-icon">🌽</span> Ancestral Corn · Wood-Fired</div>
+  </div>
+
+  <!-- ===========================
+       MENU
+  =========================== -->
+  <section class="menu-section" id="menu">
+    <div class="menu-header reveal">
+      <div>
+        <p class="section-label">The Menu</p>
+        <h2 class="section-title">Cooked with fire.<br><em>Served with soul.</em></h2>
+      </div>
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="tacos">Tacos</button>
+        <button class="menu-tab" data-tab="tostadas">Tostadas</button>
+        <button class="menu-tab" data-tab="salsas">Salsas</button>
+        <button class="menu-tab" data-tab="extras">Extras</button>
+      </div>
+    </div>
+
+    <!-- TACOS -->
+    <div class="menu-panel active" id="tab-tacos">
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Carnitas</span>
+            <span class="menu-item-price">AED 42</span>
+          </div>
+          <p class="menu-item-desc">Slow-braised pork confit, salsa verde cruda, pickled red onion, cilantro. Tortilla de maíz.</p>
+          <span class="menu-item-tag">Best Seller</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Birria de Res</span>
+            <span class="menu-item-price">AED 48</span>
+          </div>
+          <p class="menu-item-desc">Braised beef in ancho-guajillo broth, Oaxacan cheese, consomé for dipping. Wood-fired tortilla.</p>
+          <span class="menu-item-tag">Wood-Fired</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Barbacoa</span>
+            <span class="menu-item-price">AED 52</span>
+          </div>
+          <p class="menu-item-desc">Smoked lamb shoulder, avocado salsa, fresh lime, habanero oil. Slow-cooked 10 hours.</p>
+          <span class="menu-item-tag">Smoked</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-3">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Rajas con Queso</span>
+            <span class="menu-item-price">AED 38</span>
+          </div>
+          <p class="menu-item-desc">Roasted poblano strips, cream, Chihuahua cheese, sweet corn. Fully vegetarian, fully satisfying.</p>
+          <span class="menu-item-tag">Vegetarian</span>
+        </div>
+        <div class="menu-item reveal">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Camarón</span>
+            <span class="menu-item-price">AED 54</span>
+          </div>
+          <p class="menu-item-desc">Achiote-marinated Gulf shrimp, mango-habanero pico, avocado crema, micro herbs.</p>
+          <span class="menu-item-tag">Seafood</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Huitlacoche</span>
+            <span class="menu-item-price">AED 44</span>
+          </div>
+          <p class="menu-item-desc">Mexican corn truffle sautéed with epazote, queso fresco, roasted jalapeño. A delicacy.</p>
+          <span class="menu-item-tag">Chef's Pick</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOSTADAS -->
+    <div class="menu-panel" id="tab-tostadas">
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Tinga Poblana</span>
+            <span class="menu-item-price">AED 36</span>
+          </div>
+          <p class="menu-item-desc">Shredded chicken in chipotle-tomato sauce, crema, queso fresco, avocado.</p>
+          <span class="menu-item-tag">Classic</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Salmón Aguachile</span>
+            <span class="menu-item-price">AED 62</span>
+          </div>
+          <p class="menu-item-desc">Citrus-cured salmon, green aguachile, cucumber, serrano, microgreens.</p>
+          <span class="menu-item-tag">Signature</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Aguacate</span>
+            <span class="menu-item-price">AED 34</span>
+          </div>
+          <p class="menu-item-desc">House guacamole, heirloom tomato, pickled jalapeño, pomegranate, toasted pepitas.</p>
+          <span class="menu-item-tag">Vegan</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SALSAS -->
+    <div class="menu-panel" id="tab-salsas">
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Salsa Negra</span>
+            <span class="menu-item-price">AED 18</span>
+          </div>
+          <p class="menu-item-desc">Charred pasilla negro, roasted garlic, rendered pork fat. Dark, smoky, complex.</p>
+          <span class="menu-item-tag">🌶🌶🌶</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Salsa Verde Cruda</span>
+            <span class="menu-item-price">AED 16</span>
+          </div>
+          <p class="menu-item-desc">Fresh tomatillo, serrano, cilantro, white onion, blended raw. Bright and clean.</p>
+          <span class="menu-item-tag">🌶</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Mole Negro</span>
+            <span class="menu-item-price">AED 28</span>
+          </div>
+          <p class="menu-item-desc">Our grandmother's mole. 32 ingredients. 6 hours. Served warm with tortillas.</p>
+          <span class="menu-item-tag">Heritage Recipe</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-3">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Habanero Mango</span>
+            <span class="menu-item-price">AED 18</span>
+          </div>
+          <p class="menu-item-desc">Ripe Ataulfo mango, habanero, lime, sea salt. Sweet heat that creeps up on you.</p>
+          <span class="menu-item-tag">🌶🌶🌶🌶</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXTRAS -->
+    <div class="menu-panel" id="tab-extras">
+      <div class="menu-grid">
+        <div class="menu-item reveal">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Elote Asado</span>
+            <span class="menu-item-price">AED 28</span>
+          </div>
+          <p class="menu-item-desc">Wood-grilled corn, chipotle mayo, cotija cheese, chile piquín, lime.</p>
+          <span class="menu-item-tag">Snack</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-1">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Esquites</span>
+            <span class="menu-item-price">AED 24</span>
+          </div>
+          <p class="menu-item-desc">Off-the-cob corn cup, epazote, crema, queso, chile. Street food classic, elevated.</p>
+          <span class="menu-item-tag">Street</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-2">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Tortillas de Casa</span>
+            <span class="menu-item-price">AED 22</span>
+          </div>
+          <p class="menu-item-desc">Six hand-pressed tortillas, nixtamal-ground same morning. Served with salsas.</p>
+          <span class="menu-item-tag">Made Daily</span>
+        </div>
+        <div class="menu-item reveal reveal-delay-3">
+          <div class="menu-item-top">
+            <span class="menu-item-name">Agua Fresca</span>
+            <span class="menu-item-price">AED 20</span>
+          </div>
+          <p class="menu-item-desc">Rotating daily: Jamaica, horchata, tamarindo, maracuyá. Ask your server.</p>
+          <span class="menu-item-tag">Seasonal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       GALLERY STRIP
+  =========================== -->
+  <div class="gallery-strip">
+    <div class="gallery-strip-item">
+      <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Tacos Casa Maíz" loading="lazy">
+    </div>
+    <div class="gallery-strip-item">
+      <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=600&q=80" alt="Tortillas artesanales" loading="lazy">
+    </div>
+    <div class="gallery-strip-item">
+      <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80" alt="Guacamole fresco" loading="lazy">
+    </div>
+    <div class="gallery-strip-item">
+      <img src="https://images.unsplash.com/photo-1630431340973-5bc82ca5ae40?w=600&q=80" alt="Cocina wood-fired" loading="lazy">
+    </div>
+    <div class="gallery-strip-item">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Ambiente Casa Maíz" loading="lazy">
+    </div>
+  </div>
+
+  <!-- ===========================
+       HISTORIA
+  =========================== -->
+  <section class="historia-section" id="historia">
+    <div class="historia-inner">
+      <div class="historia-images reveal">
+        <div class="historia-badge">
+          <span class="historia-badge-num">3</span>
+          <span class="historia-badge-text">Generations</span>
+        </div>
+        <img
+          class="historia-img-main"
+          src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=800&q=80"
+          alt="Masa artesanal"
+          loading="lazy"
+        >
+        <img
+          class="historia-img-accent"
+          src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80"
+          alt="Ingredientes frescos"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="historia-text">
+        <p class="section-label reveal">Our Story</p>
+        <h2 class="section-title reveal">From Oaxaca<br><em>to Dubai.</em></h2>
+
+        <div class="reveal">
+          <p>It started with a comal, a bag of dried corn, and a recipe written in the margin of a notebook. <strong>Three generations of women</strong> from the Central Valleys of Oaxaca perfected the masa — the same masa we grind here, every morning, before the city wakes up.</p>
+          <p>Casa Maíz was born from a simple conviction: <strong>Dubai deserves real Mexican food.</strong> Not Tex-Mex. Not chain tacos. The kind that takes time, that smells like smoke and lime and history.</p>
+          <p>Our team is multicultural, our kitchen is wood-fired, and our corn is sourced directly from indigenous producers in Oaxaca and Guerrero. We nixtamalize it ourselves. We press every tortilla by hand. We don't take shortcuts — because you can taste shortcuts.</p>
+        </div>
+
+        <div class="historia-values reveal">
+          <div class="historia-value">
+            <div class="historia-value-icon">🌽</div>
+            <div class="historia-value-title">Nixtamal Propio</div>
+            <p class="historia-value-text">We process our own corn daily. No masa harina shortcuts.</p>
+          </div>
+          <div class="historia-value">
+            <div class="historia-value-icon">🔥</div>
+            <div class="historia-value-title">Wood-Fired</div>
+            <p class="historia-value-text">Every protein is cooked over live fire. Flavor you can't replicate.</p>
+          </div>
+          <div class="historia-value">
+            <div class="historia-value-icon">🤝</div>
+            <div class="historia-value-title">Multicultural Team</div>
+            <p class="historia-value-text">Mexican, Emirati, Filipino, Lebanese. One kitchen, one mission.</p>
+          </div>
+          <div class="historia-value">
+            <div class="historia-value-icon">🌿</div>
+            <div class="historia-value-title">Sourced Direct</div>
+            <p class="historia-value-text">Ancestral corn varieties from indigenous farmers in Oaxaca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       CATERING
+  =========================== -->
+  <section class="catering-section" id="catering">
+    <div class="catering-inner">
+      <div class="catering-header reveal">
+        <p class="section-label">Catering & Events</p>
+        <h2 class="section-title">Bring Mexico<br><em>to your event.</em></h2>
+        <p>From intimate corporate lunches to large-scale activations, we set up our station wherever you need us. Hand-pressed tortillas live, wood fire on demand, full menu customization.</p>
+      </div>
+
+      <div class="catering-grid">
+        <div class="catering-card reveal">
+          <div class="catering-card-icon">🍱</div>
+          <h3 class="catering-card-title">Lunch Boxes</h3>
+          <p class="catering-card-desc">Individually packaged taco sets for offices, film sets, and team lunches. Minimum 20 people.</p>
+          <ul class="catering-card-list">
+            <li>3 tacos + salsa set per box</li>
+            <li>Vegetarian & meat options</li>
+            <li>Next-day delivery available</li>
+            <li>Branded packaging available</li>
+          </ul>
+        </div>
+        <div class="catering-card reveal reveal-delay-1">
+          <div class="catering-card-icon">🛖</div>
+          <h3 class="catering-card-title">Taco Kiosk</h3>
+          <p class="catering-card-desc">Pop-up taco station at your venue. Full setup, branding, 2-person crew. Events up to 300 guests.</p>
+          <ul class="catering-card-list">
+            <li>Live tortilla pressing</li>
+            <li>Full salsa bar setup</li>
+            <li>Custom menu curation</li>
+            <li>3-hour minimum</li>
+          </ul>
+        </div>
+        <div class="catering-card reveal reveal-delay-2">
+          <div class="catering-card-icon">👨‍🍳</div>
+          <h3 class="catering-card-title">Live Station</h3>
+          <p class="catering-card-desc">Full immersive experience: wood fire, tortillera, live cooking, chef interaction. Premium events only.</p>
+          <ul class="catering-card-list">
+            <li>Wood-fired setup on-site</li>
+            <li>Head chef presence</li>
+            <li>Interactive demo experience</li>
+            <li>Full menu + drinks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="catering-cta reveal">
+        <a href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%2C%20I%27d%20like%20to%20enquire%20about%20catering." class="btn-primary" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Get a Quote on WhatsApp
+        </a>
+        <p>or email us at <strong>hola@casamaiz.ae</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       RESERVAS
+  =========================== -->
+  <section class="reservas-section" id="reservas">
+    <div class="reservas-inner">
+      <div class="reservas-info">
+        <p class="section-label reveal">Reservations</p>
+        <h2 class="section-title reveal">Come hungry.<br><em>Leave happy.</em></h2>
+        <p class="reveal">We take reservations for groups of 4 or more. Walk-ins always welcome — we'll fit you in.</p>
+
+        <div class="contact-items reveal">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Al Quoz 1, Dubai, UAE</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <p class="contact-label">Hours</p>
+              <p class="contact-value">Tue – Sun · 1:00pm – 11:00pm</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">hola@casamaiz.ae</p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%2C%20I%27d%20like%20to%20make%20a%20reservation."
+          class="wa-btn reveal"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Reserve via WhatsApp
+        </a>
+      </div>
+
+      <!-- Booking Form via Formspree -->
+      <div class="booking-form reveal">
+        <h3 class="form-title">Make a Reservation</h3>
+        <p class="form-sub">We'll confirm within 2 hours.</p>
+        <form action="https://formspree.io/f/xpwzqvkn" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="first_name" placeholder="Omar" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="last_name" placeholder="Al Rashidi" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="omar@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="">Select time</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="21:00">9:00 PM</option>
+                <option value="22:00">10:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4" selected>4 people</option>
+              <option value="5-6">5–6 people</option>
+              <option value="7-10">7–10 people</option>
+              <option value="10+">10+ (private event)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" placeholder="Dietary restrictions, allergies, celebrations..."></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Reservation — Casa Maíz">
+          <button type="submit" class="form-submit">Send Reservation →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       MAP
+  =========================== -->
+  <div class="map-section">
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.547!2d55.231!3d25.159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA5JzMyLjQiTiA1NcKwMTMnNTEuNiJF!5e0!3m2!1sen!2sae!4v1711000000000!5m2!1sen!2sae"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Casa Maíz Dubai location"
+        allowfullscreen
+      ></iframe>
+      <div class="map-card">
+        <p class="map-card-name">Casa Maíz</p>
+        <p class="map-card-addr">Al Quoz 1<br>Dubai, United Arab Emirates</p>
+        <p class="map-card-hours">
+          <span class="open-dot"></span>
+          Open · Tue–Sun 1pm–11pm
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <p class="footer-brand-name">Casa <span>Maíz</span></p>
+          <p class="footer-tagline">Auténtica cocina mexicana en el corazón de Dubai. Tortillas de maíz ancestral, wood-fired, hechas con alma.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="https://wa.me/971585324519" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Menu</p>
+          <ul class="footer-links">
+            <li><a href="#menu">Tacos</a></li>
+            <li><a href="#menu">Tostadas</a></li>
+            <li><a href="#menu">Salsas</a></li>
+            <li><a href="#menu">Extras</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Visit</p>
+          <ul class="footer-links">
+            <li><a href="#historia">Our Story</a></li>
+            <li><a href="#catering">Catering</a></li>
+            <li><a href="#reservas">Reservations</a></li>
+            <li><a href="https://deliveroo.ae" target="_blank" rel="noopener">Deliveroo</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Al Quoz 1, Dubai<br>United Arab Emirates</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+971 58 532 4519</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>hola@casamaiz.ae</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">🕐</span>
+            <span>Tue – Sun · 1pm – 11pm<br>Closed Mondays</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Casa Maíz Dubai. All rights reserved.</p>
+        <p class="footer-made">Demo site — Built by WebVanguard</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===========================
+       FLOATING WHATSAPP
+  =========================== -->
+  <a
+    href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%21%20I%27d%20like%20to%20know%20more."
+    class="wa-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <div class="wa-pulse"></div>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- ===========================
+       JAVASCRIPT
+  =========================== -->
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Hero BG lazy load
+    const heroBg = document.getElementById('heroBg');
+    const img = new Image();
+    img.src = 'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=1920&q=85';
+    img.onload = () => heroBg.classList.add('loaded');
+
+    // Menu tabs
+    const tabs = document.querySelectorAll('.menu-tab');
+    const panels = document.querySelectorAll('.menu-panel');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => observer.observe(el));
+
+    // Mobile nav
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.style.display === 'flex';
+      navLinks.style.display = isOpen ? 'none' : 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '100%';
+      navLinks.style.left = '0';
+      navLinks.style.right = '0';
+      navLinks.style.background = 'rgba(13,10,7,0.97)';
+      navLinks.style.padding = '1rem 2rem';
+      navLinks.style.gap = '0.75rem';
+      if (!isOpen) navLinks.style.display = 'flex';
+    });
+  </script>
+
+</body>
+</html>
