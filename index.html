@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa Maíz — Authentic Mexican Taqueria in Dubai</title>
-  <meta name="description" content="Casa Maíz brings ancient-grain tortillas, wood-fired cooking and true Mexican soul to Dubai. Handmade masa, nixtamal-ground corn, and recipes passed down three generations. Dine in, delivery & catering.">
+  <meta name="description" content="Casa Maíz brings heirloom-grain tortillas, wood-fired cooking and true Mexican soul to Dubai. Handmade masa, nixtamal-ground corn, and recipes passed down three generations. Dine in, delivery & catering.">
   <meta name="keywords" content="mexican restaurant dubai, taqueria dubai, tacos dubai, authentic mexican food dubai, corn tortillas dubai, catering dubai, mexican catering dubai, nixtamal dubai">
   <meta name="author" content="Casa Maíz">
   <meta name="robots" content="index, follow">
@@ -12,7 +12,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Casa Maíz — Authentic Mexican Taqueria in Dubai">
-  <meta property="og:description" content="Handmade tortillas. Ancient corn. Real fire. Dubai's most soulful Mexican kitchen.">
+  <meta property="og:description" content="Handmade tortillas. Heirloom corn. Real fire. Dubai's most soulful Mexican kitchen.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200&q=80">
   <meta property="og:url" content="https://casa-maiz.vercel.app/">
   <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Casa Maíz — Authentic Mexican Taqueria in Dubai">
-  <meta name="twitter:description" content="Handmade tortillas. Ancient corn. Real fire.">
+  <meta name="twitter:description" content="Handmade tortillas. Heirloom corn. Real fire.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200&q=80">
 
   <!-- Schema.org -->
@@ -1154,6 +1154,10 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .hero-content { padding: 3rem 1.25rem; }
+      .hero-title { font-size: clamp(3rem, 15vw, 5rem); }
+      .hero-sub { font-size: 0.95rem; }
+      .hero-stats { gap: 0; }
+      .hero-stat { padding: 0.6rem 1rem; }
       .catering-grid { grid-template-columns: 1fr; }
       .gallery-strip { grid-template-columns: repeat(3,1fr); height: 180px; }
       .gallery-strip-item:nth-child(4),
@@ -1164,10 +1168,23 @@
       .info-strip { flex-wrap: wrap; }
       .map-card { left: 1rem; top: 1rem; max-width: 200px; }
       .proceso-grid { grid-template-columns: 1fr 1fr; }
+      .booking-form { padding: 1.5rem; }
+      .menu-tabs { flex-wrap: wrap; }
+      .menu-tab { font-size: 0.75rem; padding: 0.5rem 0.85rem; }
     }
     @media (max-width: 480px) {
       .historia-pillars { grid-template-columns: 1fr; }
       .proceso-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn-main,
+      .hero-actions .btn-yellow { width: 100%; justify-content: center; }
+      .hero-stat-num { font-size: 1.5rem; }
+      .hero-stat-label { font-size: 0.6rem; }
+      .section-title { font-size: clamp(2.2rem, 10vw, 3rem); }
+      .map-card { max-width: 160px; padding: 0.85rem 1rem; }
+      .map-card-name { font-size: 1.2rem; }
+      footer { padding: 3rem 1.25rem 1.5rem; }
+      .wa-float { bottom: 1rem; right: 1rem; width: 52px; height: 52px; }
     }
   </style>
 </head>
@@ -1177,11 +1194,11 @@
   <nav id="nav">
     <a href="#" class="nav-logo">CASA <span class="corn">MAÍZ</span></a>
     <ul class="nav-links">
-      <li><a href="#menu">Menú</a></li>
-      <li><a href="#proceso">El Proceso</a></li>
-      <li><a href="#historia">Nuestra Historia</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#proceso">The Process</a></li>
+      <li><a href="#historia">Our Story</a></li>
       <li><a href="#catering">Catering</a></li>
-      <li><a href="#reservas" class="nav-cta">Reservar →</a></li>
+      <li><a href="#reservas" class="nav-cta">Reserve →</a></li>
     </ul>
     <div class="hamburger" id="hamburger">
       <span></span><span></span><span></span>
@@ -1195,26 +1212,25 @@
     <div class="hero-content">
       <span class="hero-badge">🌽 Dubai's Taquería — Al Quoz</span>
       <h1 class="hero-title">
-        TACOS<br>
-        <span class="highlight">DE</span><br>
-        <span class="highlight2">VERDAD.</span>
+        REAL<br>
+        <span class="highlight">TA</span><span class="highlight2">COS.</span>
       </h1>
       <p class="hero-sub">
-        Tortillas de maíz ancestral. Fuego de leña.<br>
-        <strong>Recetas de tres generaciones.</strong> Sin atajos.
+        Heirloom corn tortillas. Wood fire.<br>
+        <strong>Three generations of recipes.</strong> No shortcuts.
       </p>
       <div class="hero-actions">
-        <a href="#menu" class="btn-main">🌮 Ver el Menú</a>
-        <a href="#reservas" class="btn-yellow">Reservar Mesa</a>
+        <a href="#menu" class="btn-main">🌮 See the Menu</a>
+        <a href="#reservas" class="btn-yellow">Reserve a Table</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
           <div class="hero-stat-num">3</div>
-          <div class="hero-stat-label">Generaciones</div>
+          <div class="hero-stat-label">Generations</div>
         </div>
         <div class="hero-stat">
           <div class="hero-stat-num">100%</div>
-          <div class="hero-stat-label">Masa Propia</div>
+          <div class="hero-stat-label">House Masa</div>
         </div>
         <div class="hero-stat">
           <div class="hero-stat-num">🔥</div>
@@ -1222,7 +1238,7 @@
         </div>
         <div class="hero-stat">
           <div class="hero-stat-num">0</div>
-          <div class="hero-stat-label">Atajos</div>
+          <div class="hero-stat-label">Shortcuts</div>
         </div>
       </div>
     </div>
@@ -1232,9 +1248,9 @@
   <div class="info-strip">
     <div class="strip-ticker">
       <div class="strip-item"><span class="strip-icon">📍</span> Al Quoz, Dubai</div>
-      <div class="strip-item"><span class="strip-icon">🕐</span> Mar–Dom · 1pm–11pm</div>
+      <div class="strip-item"><span class="strip-icon">🕐</span> Tue–Sun · 1pm–11pm</div>
       <div class="strip-item"><span class="strip-icon">🌮</span> Dine-in · Delivery · Catering</div>
-      <div class="strip-item"><span class="strip-icon">🌽</span> Maíz Ancestral · Fuego de Leña</div>
+      <div class="strip-item"><span class="strip-icon">🌽</span> Heirloom Corn · Wood Fire</div>
       <div class="strip-item"><span class="strip-icon">📞</span> +971 58 532 4519</div>
     </div>
   </div>
@@ -1243,8 +1259,8 @@
   <section class="menu-section" id="menu">
     <div class="menu-header reveal">
       <div>
-        <p class="section-label">Lo Que Cocinamos</p>
-        <h2 class="section-title">EL <span class="t">MENÚ</span></h2>
+        <p class="section-label">What We Cook</p>
+        <h2 class="section-title">THE <span class="t">MENU</span></h2>
       </div>
       <div class="menu-tabs">
         <button class="menu-tab active" data-tab="tacos">🌮 Tacos</button>
@@ -1263,7 +1279,7 @@
             <span class="menu-item-name">Carnitas</span>
             <span class="menu-item-price">AED 42</span>
           </div>
-          <p class="menu-item-desc">Cerdo braseado al estilo confit, salsa verde cruda, cebolla morada encurtida, cilantro. Tortilla de maíz propia.</p>
+          <p class="menu-item-desc">Confit-style braised pork, raw salsa verde, pickled red onion, cilantro. House heirloom corn tortilla.</p>
           <span class="menu-item-tag terra">⭐ Best Seller</span>
         </div>
         <div class="menu-item reveal reveal-delay-1">
@@ -1272,7 +1288,7 @@
             <span class="menu-item-name">Birria de Res</span>
             <span class="menu-item-price">AED 48</span>
           </div>
-          <p class="menu-item-desc">Res braseada en caldo de ancho y guajillo, queso Oaxaqueño, consomé para remojar. Tortilla wood-fired.</p>
+          <p class="menu-item-desc">Beef braised in ancho and guajillo broth, Oaxacan cheese, consommé for dipping. Wood-fired tortilla.</p>
           <span class="menu-item-tag terra">🔥 Wood-Fired</span>
         </div>
         <div class="menu-item reveal reveal-delay-2">
@@ -1281,7 +1297,7 @@
             <span class="menu-item-name">Barbacoa</span>
             <span class="menu-item-price">AED 52</span>
           </div>
-          <p class="menu-item-desc">Paleta de borrego ahumada, salsa de aguacate, lima, aceite de habanero. Cocción lenta 10 horas.</p>
+          <p class="menu-item-desc">Smoked lamb shoulder, avocado salsa, lime, habanero oil. 10-hour slow cook.</p>
           <span class="menu-item-tag">💨 Smoked</span>
         </div>
         <div class="menu-item reveal reveal-delay-3">
@@ -1290,17 +1306,17 @@
             <span class="menu-item-name">Rajas con Queso</span>
             <span class="menu-item-price">AED 38</span>
           </div>
-          <p class="menu-item-desc">Rajas de poblano asado, crema, queso Chihuahua, elote dulce. Completamente vegetariano.</p>
-          <span class="menu-item-tag green">🌿 Vegetariano</span>
+          <p class="menu-item-desc">Roasted poblano strips, crema, Chihuahua cheese, sweet corn. Fully vegetarian.</p>
+          <span class="menu-item-tag green">🌿 Vegetarian</span>
         </div>
         <div class="menu-item reveal">
           <div class="menu-item-emoji">🦐</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Camarón</span>
+            <span class="menu-item-name">Shrimp</span>
             <span class="menu-item-price">AED 54</span>
           </div>
-          <p class="menu-item-desc">Camarón marinado en achiote, pico de gallo de mango-habanero, crema de aguacate, hierbas frescas.</p>
-          <span class="menu-item-tag">🌊 Mariscos</span>
+          <p class="menu-item-desc">Achiote-marinated shrimp, mango-habanero pico de gallo, avocado crema, fresh herbs.</p>
+          <span class="menu-item-tag">🌊 Seafood</span>
         </div>
         <div class="menu-item reveal reveal-delay-1">
           <div class="menu-item-emoji">🍄</div>
@@ -1308,7 +1324,7 @@
             <span class="menu-item-name">Huitlacoche</span>
             <span class="menu-item-price">AED 44</span>
           </div>
-          <p class="menu-item-desc">Trufa del maíz mexicano salteada con epazote, queso fresco, jalapeño asado. Una rareza.</p>
+          <p class="menu-item-desc">Mexican corn truffle sautéed with epazote, fresh cheese, roasted jalapeño. A rare find.</p>
           <span class="menu-item-tag">👨‍🍳 Chef's Pick</span>
         </div>
       </div>
@@ -1323,25 +1339,25 @@
             <span class="menu-item-name">Tinga Poblana</span>
             <span class="menu-item-price">AED 36</span>
           </div>
-          <p class="menu-item-desc">Pollo deshebrado en salsa de chipotle y jitomate, crema, queso fresco, aguacate.</p>
-          <span class="menu-item-tag">🏆 Clásico</span>
+          <p class="menu-item-desc">Shredded chicken in chipotle-tomato sauce, crema, fresh cheese, avocado.</p>
+          <span class="menu-item-tag">🏆 Classic</span>
         </div>
         <div class="menu-item reveal reveal-delay-1">
           <div class="menu-item-emoji">🐟</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Salmón Aguachile</span>
+            <span class="menu-item-name">Salmon Aguachile</span>
             <span class="menu-item-price">AED 62</span>
           </div>
-          <p class="menu-item-desc">Salmón curado en cítricos, aguachile verde, pepino, serrano, microgreens.</p>
+          <p class="menu-item-desc">Citrus-cured salmon, green aguachile, cucumber, serrano, microgreens.</p>
           <span class="menu-item-tag terra">✨ Signature</span>
         </div>
         <div class="menu-item reveal reveal-delay-2">
           <div class="menu-item-emoji">🥑</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Aguacate</span>
+            <span class="menu-item-name">Avocado</span>
             <span class="menu-item-price">AED 34</span>
           </div>
-          <p class="menu-item-desc">Guacamole de la casa, jitomate heirloom, jalapeño encurtido, granada, pepitas tostadas.</p>
+          <p class="menu-item-desc">House guacamole, heirloom tomato, pickled jalapeño, pomegranate, toasted pepitas.</p>
           <span class="menu-item-tag green">🌿 Vegan</span>
         </div>
       </div>
@@ -1356,16 +1372,16 @@
             <span class="menu-item-name">Salsa Negra</span>
             <span class="menu-item-price">AED 18</span>
           </div>
-          <p class="menu-item-desc">Pasilla negro tatemado, ajo rostizado, manteca de cerdo. Oscura, ahumada, compleja.</p>
-          <span class="menu-item-tag terra">🌶🌶🌶 Picante</span>
+          <p class="menu-item-desc">Charred pasilla negro, roasted garlic, lard. Dark, smoky, complex.</p>
+          <span class="menu-item-tag terra">🌶🌶🌶 Hot</span>
         </div>
         <div class="menu-item reveal reveal-delay-1">
           <div class="menu-item-emoji">💚</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Salsa Verde Cruda</span>
+            <span class="menu-item-name">Raw Salsa Verde</span>
             <span class="menu-item-price">AED 16</span>
           </div>
-          <p class="menu-item-desc">Tomatillo fresco, serrano, cilantro, cebolla blanca, licuado en crudo. Brillante y limpio.</p>
+          <p class="menu-item-desc">Fresh tomatillo, serrano, cilantro, white onion, blended raw. Bright and clean.</p>
           <span class="menu-item-tag">🌶 Mild</span>
         </div>
         <div class="menu-item reveal reveal-delay-2">
@@ -1374,8 +1390,8 @@
             <span class="menu-item-name">Mole Negro</span>
             <span class="menu-item-price">AED 28</span>
           </div>
-          <p class="menu-item-desc">El mole de la abuela. 32 ingredientes. 6 horas de cocción. Servido caliente con tortillas.</p>
-          <span class="menu-item-tag">👵 Receta Heredada</span>
+          <p class="menu-item-desc">Grandma's mole. 32 ingredients. 6 hours of cooking. Served warm with tortillas.</p>
+          <span class="menu-item-tag">👵 Heirloom Recipe</span>
         </div>
         <div class="menu-item reveal reveal-delay-3">
           <div class="menu-item-emoji">🥭</div>
@@ -1383,8 +1399,8 @@
             <span class="menu-item-name">Habanero Mango</span>
             <span class="menu-item-price">AED 18</span>
           </div>
-          <p class="menu-item-desc">Mango Ataulfo maduro, habanero, lima, sal de mar. Dulce y picante que te llega despacio.</p>
-          <span class="menu-item-tag terra">🌶🌶🌶🌶 Muy Picante</span>
+          <p class="menu-item-desc">Ripe Ataulfo mango, habanero, lime, sea salt. Sweet and spicy heat that sneaks up on you.</p>
+          <span class="menu-item-tag terra">🌶🌶🌶🌶 Very Hot</span>
         </div>
       </div>
     </div>
@@ -1395,10 +1411,10 @@
         <div class="menu-item reveal">
           <div class="menu-item-emoji">🌽</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Elote Asado</span>
+            <span class="menu-item-name">Grilled Corn</span>
             <span class="menu-item-price">AED 28</span>
           </div>
-          <p class="menu-item-desc">Elote asado a la leña, mayonesa chipotle, queso cotija, chile piquín, limón.</p>
+          <p class="menu-item-desc">Wood-grilled corn, chipotle mayo, cotija cheese, piquín chile, lime.</p>
           <span class="menu-item-tag">🔥 Street Classic</span>
         </div>
         <div class="menu-item reveal reveal-delay-1">
@@ -1407,17 +1423,17 @@
             <span class="menu-item-name">Esquites</span>
             <span class="menu-item-price">AED 24</span>
           </div>
-          <p class="menu-item-desc">Vaso de elote desgranado, epazote, crema, queso, chile. Antojito de mercado, bien hecho.</p>
+          <p class="menu-item-desc">Cup of corn kernels, epazote, crema, cheese, chile. Market antojito, done right.</p>
           <span class="menu-item-tag">🏙️ Street Food</span>
         </div>
         <div class="menu-item reveal reveal-delay-2">
           <div class="menu-item-emoji">🫓</div>
           <div class="menu-item-top">
-            <span class="menu-item-name">Tortillas de Casa</span>
+            <span class="menu-item-name">House Tortillas</span>
             <span class="menu-item-price">AED 22</span>
           </div>
-          <p class="menu-item-desc">Seis tortillas prensadas a mano, maíz nixtamalizado esa misma mañana. Con salsas.</p>
-          <span class="menu-item-tag green">✅ Frescas Diario</span>
+          <p class="menu-item-desc">Six hand-pressed tortillas, nixtamalized corn from that morning. With salsas.</p>
+          <span class="menu-item-tag green">✅ Fresh Daily</span>
         </div>
         <div class="menu-item reveal reveal-delay-3">
           <div class="menu-item-emoji">🍹</div>
@@ -1425,7 +1441,7 @@
             <span class="menu-item-name">Agua Fresca</span>
             <span class="menu-item-price">AED 20</span>
           </div>
-          <p class="menu-item-desc">Jamaica, horchata, tamarindo, maracuyá. Rotación diaria — pregúntale al mesero.</p>
+          <p class="menu-item-desc">Hibiscus, horchata, tamarind, passion fruit. Daily rotation — ask your server.</p>
           <span class="menu-item-tag">🌿 Seasonal</span>
         </div>
       </div>
@@ -1438,27 +1454,27 @@
       <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Tacos Casa Maíz" loading="lazy">
     </div>
     <div class="gallery-strip-item">
-      <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=600&q=80" alt="Tortillas artesanales" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1624300629298-e9de39c13be5?w=600&q=80" alt="Handmade tortillas" loading="lazy">
     </div>
     <div class="gallery-strip-item">
-      <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80" alt="Guacamole fresco" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80" alt="Fresh guacamole" loading="lazy">
     </div>
     <div class="gallery-strip-item">
-      <img src="https://images.unsplash.com/photo-1630431340973-5bc82ca5ae40?w=600&q=80" alt="Cocina wood-fired" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Wood-fired kitchen" loading="lazy">
     </div>
     <div class="gallery-strip-item">
-      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Ambiente Casa Maíz" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Casa Maíz ambiance" loading="lazy">
     </div>
   </div>
 
-  <!-- EL PROCESO -->
+  <!-- THE PROCESS -->
   <section class="proceso-section" id="proceso">
     <div class="proceso-inner">
       <div class="reveal">
-        <p class="section-label">Lo Que Nos Diferencia</p>
-        <h2 class="section-title">EL <span style="color:var(--yellow)">PROCESO</span></h2>
+        <p class="section-label">What Sets Us Apart</p>
+        <h2 class="section-title">THE <span style="color:var(--yellow)">PROCESS</span></h2>
         <p style="max-width:620px;margin-top:0.75rem;font-size:1rem;color:rgba(245,236,215,0.85);line-height:1.7;">
-          Hay restaurantes mexicanos. Y luego está Casa Maíz. La diferencia está en lo que no se ve: el maíz que llegó de Oaxaca, la cal que lo transformó, las manos que lo prensaron.
+          There are Mexican restaurants. And then there's Casa Maíz. The difference is in what you don't see: the corn that arrived from Oaxaca, the lime that transformed it, the hands that pressed it.
         </p>
       </div>
 
@@ -1466,83 +1482,83 @@
         <div class="proceso-card reveal">
           <span class="proceso-num">01</span>
           <div class="proceso-icon">🌽</div>
-          <div class="proceso-title">Maíz Ancestral</div>
-          <p class="proceso-text">Importamos variedades nativas de Oaxaca y Guerrero directamente de productores indígenas. Nada de maíz industrial.</p>
+          <div class="proceso-title">Heirloom Corn</div>
+          <p class="proceso-text">We import native varieties from Oaxaca and Guerrero directly from indigenous farmers. No industrial corn.</p>
         </div>
         <div class="proceso-card reveal reveal-delay-1">
           <span class="proceso-num">02</span>
           <div class="proceso-icon">💧</div>
-          <div class="proceso-title">Nixtamalización</div>
-          <p class="proceso-text">Cocemos el maíz en agua con cal (nixtamal) cada madrugada. Este proceso milenario libera los nutrientes y crea la masa real.</p>
+          <div class="proceso-title">Nixtamalization</div>
+          <p class="proceso-text">We cook the corn in lime water (nixtamal) every dawn. This ancient process unlocks nutrients and creates real masa.</p>
         </div>
         <div class="proceso-card reveal reveal-delay-2">
           <span class="proceso-num">03</span>
           <div class="proceso-icon">👐</div>
-          <div class="proceso-title">Prensado a Mano</div>
-          <p class="proceso-text">Cada tortilla se prensa a mano en la tortillera. Nunca usamos masa harina, nunca compramos tortillas hechas.</p>
+          <div class="proceso-title">Hand-Pressed</div>
+          <p class="proceso-text">Every tortilla is hand-pressed on the tortilla press. We never use masa harina, never buy pre-made tortillas.</p>
         </div>
         <div class="proceso-card reveal reveal-delay-3">
           <span class="proceso-num">04</span>
           <div class="proceso-icon">🔥</div>
-          <div class="proceso-title">Fuego de Leña</div>
-          <p class="proceso-text">Toda la proteína se cocina sobre fuego vivo. El ahumado natural que no se puede replicar con gas ni horno de convección.</p>
+          <div class="proceso-title">Wood Fire</div>
+          <p class="proceso-text">All protein is cooked over live fire. Natural smoke flavor you can't replicate with gas or a convection oven.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HISTORIA -->
+  <!-- OUR STORY -->
   <section class="historia-section" id="historia">
     <div class="historia-inner">
       <div class="historia-images reveal">
         <div class="historia-badge">
           <span class="historia-badge-num">3</span>
-          <span class="historia-badge-text">Generaciones</span>
+          <span class="historia-badge-text">Generations</span>
         </div>
         <img
           class="historia-img-main"
           src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=800&q=80"
-          alt="Masa artesanal Casa Maíz"
+          alt="House masa — Casa Maíz"
           loading="lazy"
         >
         <img
           class="historia-img-accent"
           src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=80"
-          alt="Ingredientes frescos"
+          alt="Fresh ingredients"
           loading="lazy"
         >
       </div>
 
       <div class="historia-text">
-        <p class="section-label reveal">Nuestra Historia</p>
-        <h2 class="section-title reveal">DE <span class="t">OAXACA</span><br>A <span class="g">DUBAI.</span></h2>
+        <p class="section-label reveal">Our Story</p>
+        <h2 class="section-title reveal">FROM <span class="t">OAXACA</span><br>TO <span class="g">DUBAI.</span></h2>
 
         <div class="reveal">
-          <p>Empezó con un comal, un costal de maíz seco y una receta escrita al margen de un cuaderno. <strong>Tres generaciones de mujeres</strong> de los Valles Centrales de Oaxaca perfeccionaron la masa — la misma que molemos aquí, cada mañana, antes de que la ciudad despierte.</p>
-          <p>Casa Maíz nació de una convicción sencilla: <strong>Dubai merece comida mexicana real.</strong> No Tex-Mex. No tacos de cadena. El tipo que toma tiempo, que huele a humo, a limón, a historia.</p>
-          <p>Nuestro equipo es multicultural, nuestra cocina funciona con leña, y nuestro maíz viene directamente de productores indígenas en Oaxaca y Guerrero. Lo nixtamalizamos nosotros. Prensamos cada tortilla a mano. No tomamos atajos — porque los atajos se prueban.</p>
+          <p>It started with a comal, a sack of dried corn, and a recipe written in the margin of a notebook. <strong>Three generations of women</strong> from the Central Valleys of Oaxaca perfected the masa — the same one we grind here, every morning, before the city wakes up.</p>
+          <p>Casa Maíz was born from a simple conviction: <strong>Dubai deserves real Mexican food.</strong> Not Tex-Mex. Not chain tacos. The kind that takes time, that smells of smoke, of lime, of history.</p>
+          <p>Our team is multicultural, our kitchen runs on wood fire, and our corn comes directly from indigenous farmers in Oaxaca and Guerrero. We nixtamalize it ourselves. We hand-press every tortilla. We don't cut corners — because shortcuts show.</p>
         </div>
 
         <div class="historia-pillars reveal">
           <div class="pillar">
             <div class="pillar-icon">🌽</div>
-            <div class="pillar-title">Nixtamal Propio</div>
-            <p class="pillar-text">Procesamos nuestro propio maíz diariamente. Sin masa harina.</p>
+            <div class="pillar-title">House Nixtamal</div>
+            <p class="pillar-text">We process our own corn daily. No masa harina.</p>
           </div>
           <div class="pillar">
             <div class="pillar-icon">🔥</div>
             <div class="pillar-title">Wood-Fired</div>
-            <p class="pillar-text">Toda proteína sobre fuego vivo. Sabor que no se replica.</p>
+            <p class="pillar-text">All protein over live fire. Flavor you can't replicate.</p>
           </div>
           <div class="pillar">
             <div class="pillar-icon">🤝</div>
-            <div class="pillar-title">Equipo Multicultural</div>
-            <p class="pillar-text">Mexicanos, emiratíes, filipinos, libaneses. Una cocina, una misión.</p>
+            <div class="pillar-title">Multicultural Team</div>
+            <p class="pillar-text">Mexican, Emirati, Filipino, Lebanese. One kitchen, one mission.</p>
           </div>
           <div class="pillar">
             <div class="pillar-icon">🌿</div>
-            <div class="pillar-title">Origen Directo</div>
-            <p class="pillar-text">Variedades de maíz ancestral de agricultores en Oaxaca.</p>
+            <div class="pillar-title">Direct Sourcing</div>
+            <p class="pillar-text">Heirloom corn varieties from farmers in Oaxaca.</p>
           </div>
         </div>
       </div>
@@ -1553,9 +1569,9 @@
   <section class="catering-section" id="catering">
     <div class="catering-inner">
       <div class="catering-header reveal">
-        <p class="section-label">Para Tu Evento</p>
-        <h2 class="section-title">CATERING<br><span style="color:var(--yellow)">& EVENTOS</span></h2>
-        <p>Llevamos el taco a donde estés. Oficinas, activaciones, bodas, cumpleaños. Tortillas prensadas en vivo, leña bajo pedido, menú customizable.</p>
+        <p class="section-label">For Your Event</p>
+        <h2 class="section-title">CATERING<br><span style="color:var(--yellow)">& EVENTS</span></h2>
+        <p>We bring the taco to you. Offices, activations, weddings, birthdays. Live tortilla pressing, wood fire on request, customizable menu.</p>
       </div>
 
       <div class="catering-grid">
@@ -1563,71 +1579,71 @@
           <div class="catering-card-num">01</div>
           <div class="catering-card-icon">🍱</div>
           <h3 class="catering-card-title">Lunch Boxes</h3>
-          <p class="catering-card-desc">Sets de tacos empacados individualmente para oficinas, sets de filmación y comidas de equipo. Mínimo 20 personas.</p>
+          <p class="catering-card-desc">Individually packaged taco sets for offices, film sets, and team meals. Minimum 20 people.</p>
           <ul class="catering-card-list">
-            <li>3 tacos + set de salsa por caja</li>
-            <li>Opciones vegetarianas y con carne</li>
-            <li>Entrega al día siguiente</li>
-            <li>Empaque con branding disponible</li>
+            <li>3 tacos + salsa set per box</li>
+            <li>Vegetarian and meat options</li>
+            <li>Next-day delivery</li>
+            <li>Branded packaging available</li>
           </ul>
         </div>
         <div class="catering-card reveal reveal-delay-1">
           <div class="catering-card-num">02</div>
           <div class="catering-card-icon">🛖</div>
           <h3 class="catering-card-title">Taco Kiosk</h3>
-          <p class="catering-card-desc">Estación de tacos pop-up en tu venue. Setup completo, branding, crew de 2 personas. Eventos hasta 300 personas.</p>
+          <p class="catering-card-desc">Pop-up taco station at your venue. Full setup, branding, 2-person crew. Events up to 300 people.</p>
           <ul class="catering-card-list">
-            <li>Prensado de tortillas en vivo</li>
-            <li>Barra de salsas completa</li>
-            <li>Menú a la medida</li>
-            <li>Mínimo 3 horas</li>
+            <li>Live tortilla pressing on-site</li>
+            <li>Full salsa bar</li>
+            <li>Custom menu</li>
+            <li>Minimum 3 hours</li>
           </ul>
         </div>
         <div class="catering-card reveal reveal-delay-2">
           <div class="catering-card-num">03</div>
           <div class="catering-card-icon">👨‍🍳</div>
           <h3 class="catering-card-title">Live Station</h3>
-          <p class="catering-card-desc">Experiencia inmersiva completa: fuego de leña, tortillera en vivo, cocina interactiva con el chef. Solo eventos premium.</p>
+          <p class="catering-card-desc">Full immersive experience: live fire, on-site tortilla press, interactive chef cooking. Premium events only.</p>
           <ul class="catering-card-list">
-            <li>Setup de leña on-site</li>
-            <li>Chef titular presente</li>
-            <li>Demo interactivo en vivo</li>
-            <li>Menú completo + bebidas</li>
+            <li>On-site wood fire setup</li>
+            <li>Head chef present</li>
+            <li>Live interactive demo</li>
+            <li>Full menu + drinks</li>
           </ul>
         </div>
       </div>
 
       <div class="catering-cta reveal">
-        <a href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%2C%20I%27d%20like%20to%20enquire%20about%20catering." class="btn-yellow" target="_blank" rel="noopener">
+        <a href="https://wa.me/971585324519?text=Hi%20Casa%20Ma%C3%ADz%2C%20I%27d%20like%20to%20enquire%20about%20catering." class="btn-yellow" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:var(--noir)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Pedir Cotización por WhatsApp
+          Request a Quote on WhatsApp
         </a>
-        <p>o escríbenos a <strong>hola@casamaiz.ae</strong></p>
+        <p>or email us at <strong>hola@casamaiz.ae</strong></p>
       </div>
     </div>
   </section>
 
-  <!-- RESERVAS -->
+  <!-- RESERVATIONS -->
   <section class="reservas-section" id="reservas">
     <div class="reservas-inner">
       <div class="reservas-info">
-        <p class="section-label reveal">Ven a Vernos</p>
-        <h2 class="section-title reveal">RESERVA<br><span class="t">TU MESA</span></h2>
-        <p class="reveal">Tomamos reservaciones para grupos de 4 o más. Walk-ins siempre bienvenidos — te acomodamos.</p>
+        <p class="section-label reveal">Come See Us</p>
+        <h2 class="section-title reveal">BOOK<br><span class="t">YOUR TABLE</span></h2>
+        <p class="reveal">We take reservations for groups of 4 or more. Walk-ins always welcome — we'll find you a spot.</p>
 
         <div class="contact-items reveal">
           <div class="contact-item">
             <div class="contact-icon">📍</div>
             <div>
-              <p class="contact-label">Ubicación</p>
+              <p class="contact-label">Location</p>
               <p class="contact-value">Al Quoz 1, Dubai, UAE</p>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">🕐</div>
             <div>
-              <p class="contact-label">Horarios</p>
-              <p class="contact-value">Mar – Dom · 1:00pm – 11:00pm</p>
+              <p class="contact-label">Hours</p>
+              <p class="contact-value">Tue – Sun · 1:00pm – 11:00pm</p>
             </div>
           </div>
           <div class="contact-item">
@@ -1640,27 +1656,27 @@
         </div>
 
         <a
-          href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%2C%20quiero%20hacer%20una%20reservaci%C3%B3n."
+          href="https://wa.me/971585324519?text=Hi%20Casa%20Ma%C3%ADz%2C%20I%27d%20like%20to%20make%20a%20reservation."
           class="wa-btn reveal"
           target="_blank"
           rel="noopener"
         >
           <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Reservar por WhatsApp
+          Reserve on WhatsApp
         </a>
       </div>
 
       <div class="booking-form reveal">
-        <h3 class="form-title">HACER RESERVACIÓN</h3>
-        <p class="form-sub">Te confirmamos en menos de 2 horas.</p>
+        <h3 class="form-title">MAKE A RESERVATION</h3>
+        <p class="form-sub">We'll confirm within 2 hours.</p>
         <form action="https://formspree.io/f/xpwzqvkn" method="POST">
           <div class="form-row">
             <div class="form-group">
-              <label for="fname">Nombre</label>
+              <label for="fname">First Name</label>
               <input type="text" id="fname" name="first_name" placeholder="Omar" required>
             </div>
             <div class="form-group">
-              <label for="lname">Apellido</label>
+              <label for="lname">Last Name</label>
               <input type="text" id="lname" name="last_name" placeholder="Al Rashidi" required>
             </div>
           </div>
@@ -1670,19 +1686,19 @@
               <input type="email" id="email" name="email" placeholder="omar@gmail.com" required>
             </div>
             <div class="form-group">
-              <label for="phone">WhatsApp / Teléfono</label>
+              <label for="phone">WhatsApp / Phone</label>
               <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="date">Fecha</label>
+              <label for="date">Date</label>
               <input type="date" id="date" name="date" required>
             </div>
             <div class="form-group">
-              <label for="time">Hora Preferida</label>
+              <label for="time">Preferred Time</label>
               <select id="time" name="time">
-                <option value="">Seleccionar</option>
+                <option value="">Select</option>
                 <option value="13:00">1:00 PM</option>
                 <option value="14:00">2:00 PM</option>
                 <option value="15:00">3:00 PM</option>
@@ -1695,22 +1711,22 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="guests">Número de Personas</label>
+            <label for="guests">Number of Guests</label>
             <select id="guests" name="guests">
-              <option value="2">2 personas</option>
-              <option value="3">3 personas</option>
-              <option value="4" selected>4 personas</option>
-              <option value="5-6">5–6 personas</option>
-              <option value="7-10">7–10 personas</option>
-              <option value="10+">10+ (evento privado)</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4" selected>4 guests</option>
+              <option value="5-6">5–6 guests</option>
+              <option value="7-10">7–10 guests</option>
+              <option value="10+">10+ (private event)</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="notes">Peticiones Especiales</label>
-            <textarea id="notes" name="notes" placeholder="Alergias, cumpleaños, restricciones dietéticas..."></textarea>
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" placeholder="Allergies, birthdays, dietary restrictions..."></textarea>
           </div>
-          <input type="hidden" name="_subject" value="Nueva Reservación — Casa Maíz">
-          <button type="submit" class="form-submit">ENVIAR RESERVACIÓN →</button>
+          <input type="hidden" name="_subject" value="New Reservation — Casa Maíz">
+          <button type="submit" class="form-submit">SEND RESERVATION →</button>
         </form>
       </div>
     </div>
@@ -1731,7 +1747,7 @@
         <p class="map-card-addr">Al Quoz 1<br>Dubai, UAE</p>
         <p class="map-card-hours">
           <span class="open-dot"></span>
-          Abierto · Mar–Dom 1–11pm
+          Open · Tue–Sun 1–11pm
         </p>
       </div>
     </div>
@@ -1743,7 +1759,7 @@
       <div class="footer-top">
         <div>
           <p class="footer-brand-name">CASA <span class="corn">MAÍZ</span></p>
-          <p class="footer-tagline">Auténtica cocina mexicana en el corazón de Dubai. Tortillas de maíz ancestral, wood-fired, hechas con alma.</p>
+          <p class="footer-tagline">Authentic Mexican cuisine in the heart of Dubai. Heirloom corn tortillas, wood-fired, made with soul.</p>
           <div class="footer-social">
             <a href="#" class="social-link" aria-label="Instagram">📸</a>
             <a href="#" class="social-link" aria-label="TikTok">🎵</a>
@@ -1751,7 +1767,7 @@
           </div>
         </div>
         <div>
-          <p class="footer-col-title">Menú</p>
+          <p class="footer-col-title">Menu</p>
           <ul class="footer-links">
             <li><a href="#menu">Tacos</a></li>
             <li><a href="#menu">Tostadas</a></li>
@@ -1760,16 +1776,16 @@
           </ul>
         </div>
         <div>
-          <p class="footer-col-title">Visítanos</p>
+          <p class="footer-col-title">Visit Us</p>
           <ul class="footer-links">
-            <li><a href="#historia">Nuestra Historia</a></li>
-            <li><a href="#proceso">El Proceso</a></li>
+            <li><a href="#historia">Our Story</a></li>
+            <li><a href="#proceso">The Process</a></li>
             <li><a href="#catering">Catering</a></li>
-            <li><a href="#reservas">Reservaciones</a></li>
+            <li><a href="#reservas">Reservations</a></li>
           </ul>
         </div>
         <div>
-          <p class="footer-col-title">Contacto</p>
+          <p class="footer-col-title">Contact</p>
           <div class="footer-contact-item">
             <span class="icon">📍</span>
             <span>Al Quoz 1, Dubai<br>United Arab Emirates</span>
@@ -1784,12 +1800,12 @@
           </div>
           <div class="footer-contact-item">
             <span class="icon">🕐</span>
-            <span>Mar – Dom · 1pm – 11pm<br>Cerrado los Lunes</span>
+            <span>Tue – Sun · 1pm – 11pm<br>Closed Mondays</span>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copy">© 2025 Casa Maíz Dubai. Todos los derechos reservados.</p>
+        <p class="footer-copy">© 2025 Casa Maíz Dubai. All rights reserved.</p>
         <p class="footer-made">Demo — Built by WebVanguard</p>
       </div>
     </div>
@@ -1797,7 +1813,7 @@
 
   <!-- FLOATING WHATSAPP -->
   <a
-    href="https://wa.me/971585324519?text=Hola%20Casa%20Ma%C3%ADz%21%20Quiero%20saber%20m%C3%A1s."
+    href="https://wa.me/971585324519?text=Hi%20Casa%20Ma%C3%ADz%21%20I%27d%20like%20to%20know%20more."
     class="wa-float"
     target="_blank"
     rel="noopener"
